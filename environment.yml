@@ -1,0 +1,14 @@
+# conda env create -f environment.yml
+# conda env export > environment.yml
+# conda env update -f environment.yml --prune
+
+name: xss-tester
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - requests
+  - beautifulsoup4
+  - pip
+  - pip:
+      - urllib3
